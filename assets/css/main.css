@@ -60353,10 +60353,168 @@ p.lead {
   line-height: 29px;
   color: #9d9d9d;
 }
+.btn-outline-brand-01:hover,.btn-outline-brand-01:focus,
 .btn-brand-01:hover, .btn-brand-01:focus,
 .btn-brand-03:hover, .btn-brand-03:focus,
 .btn-brand-02:hover, .btn-brand-02:focus {
   background-color: #02f1b5d1;
   border-color: #02f1b5d1;
   color: #fff;
+}
+
+.about-h1{
+font-size: 65px;
+letter-spacing: 2px;
+color: #ffffff;
+font-weight: 800;
+text-align: center;
+}
+p.lead.about-lead {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #9d9d9d;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 7%;
+}
+img.link-img {
+  width: 25px;
+  height: 10px;
+}
+.post-date {
+  font-size: 12px;
+  color: #8392a5;
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #02f1b5;
+  font-weight: 400;
+}
+img.img-fluid.rounded.profile-pic {
+  height: 100px;
+  width: 113px;
+  object-fit: cover;
+}
+.text-about {
+  background: #3C3E4C;
+  color: white;
+  height: 165px;
+  padding: 44px;
+  text-align: center;
+}
+
+.about-ul > li {
+  border: none !important;
+  color: white;
+  list-style: disc;
+  line-height: 15px;
+  margin-top: 0px !important;
+  padding: 12px !important;
+}
+.badge-img{
+  position: absolute;
+    top: -9%;
+    z-index: 1;
+    right: 33%;
+}
+.badge-img-3{
+    top: -12%;
+    right: 27%;
+}
+ul.list-unstyled.pricing-feature-list-2>li >p {
+  color: #9d9d9d;
+  font-size: 12px;
+  /* border: none; */
+}
+.pricing-new-wrapper li {
+  border: none;
+}
+.faq-wrap .card .card-header {
+  padding: 0.95rem 1.25rem;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+    border-radius: 0px !important;
+  background: #2f313a;
+  margin-bottom: 0;
+  border: 1px solid #2f313a;
+}
+.gray-light-bg .faq-wrap .card .card-body {
+  background: #2f313a !important;
+}
+.faq-wrap .card .card-header.collapsed {
+  background: #2f313a;
+  color: white;
+}
+.faq-wrap .card .card-header.collapsed h6 {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+.faq-wrap .card .card-header.collapsed:after {
+  content: "\f107";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: inherit;
+}
+.faq-wrap .card .card-body {
+  background: #fafafa;
+  border-radius: 0px;
+}
+.popular-price:hover {
+  border: 2px solid #02f1b5 !important;
+  cursor: pointer;
+}
+a.btn.btn-custom-col {
+  background: #444754;
+  color: white;
+}
+.price-col{
+  margin-bottom: inherit;
+}
+.primary-bg {
+  background: #050506 !important;
+}
+.avatar {
+	width: 60px;
+	height: 60px;
+  border-radius: 40px; /* половина ширины и высоты */
+  margin: -4px;
+}
+.title-with-icon-link {
+  display: block;
+  padding: 18px 15px;
+  background: #464646;
+  color: white;
+}
+.title-with-icon-link:hover {
+  background: #2f313abd;
+  border-radius: 0.375rem;
+  color: white;
+}
+
+
+@media(max-width:992px){
+  h2.py-5.text-white.second-hero-h2 {
+    display: none;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+ul.app-list {
+  display: flex;
+  flex: 1 0;
+  flex-direction: row-reverse;
+}
+.price-col{
+  margin-bottom: 25%;
+}
+.about-intro-2{
+  flex-direction: column-reverse;
+}
+}
+@media(min-width:768px){
+  .about-intro-2 {
+    flex-direction: row-reverse;
+  }
 }
