@@ -7,7 +7,8 @@
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>SLOTHY BOT | USER PANEL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./assets/up_css/up.css" rel="stylesheet">
 </head>
@@ -49,21 +50,21 @@
             </div>
             <div class="app-header__content">
                 <div class="app-header-left">
-                    
+
                     <ul class="header-menu nav">
                         <li class="nav-item">
                             <a href="javascript:void(0);" class="nav-link">
-                                
+
                             </a>
                         </li>
                         <li class="btn-group nav-item">
                             <a href="javascript:void(0);" class="nav-link">
-                                
+
                             </a>
                         </li>
                         <li class="dropdown nav-item">
                             <a href="javascript:void(0);" class="nav-link">
-                                
+
                             </a>
                         </li>
                     </ul>
@@ -76,7 +77,8 @@
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="./assets/aboutprofile.png" alt="">
+                                            <img width="42" class="rounded-circle" src="./assets/aboutprofile.png"
+                                                alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true"
@@ -95,11 +97,11 @@
                                     </div>
                                 </div>
                                 <div class="widget-content-right header-user-info ml-3">
-                                    <button type="button"class="btn-shadow p-1 btn btn-primary btn-sm">
-                                        Get Support 
+                                    <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm">
+                                        Get Support
                                     </button>
-                                    <button type="button"class="btn-shadow p-1 btn btn-primary btn-sm">
-                                        Buy now 
+                                    <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm">
+                                        Buy now
                                     </button>
                                 </div>
                             </div>
@@ -108,7 +110,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="app-main">
             <div class="app-sidebar sidebar-shadow bg-slick-carbon sidebar-text-light">
                 <div class="app-header__logo">
@@ -147,42 +149,43 @@
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
                             <li>
-                                <a href="./userpanel.html" class="mm-active">
+                                <a id="download-btn" onclick="showtab('download')" href="javascript:void(0)" style="background-color:rgba(255,255,255,.15)">
                                     <i class="fa fa-download"></i>
                                     All Downloads
                                 </a>
                             </li>
                             <li>
-                                <a href="./order.html" class="">
+                                <a id="order-btn" onclick="showtab('order')" href="javascript:void(0)" style="background-color:inherit">
                                     <i class="fa fa-list"></i>
                                     All Orders
                                 </a>
                             </li>
                             <li>
-                                <a href="./subscription.html" class="">
+                                <a id="subs-btn" onclick="showtab('subs')" href="javascript:void(0)" style="background-color:inherit">
                                     <i class="fa fa-dollar"></i>
                                     All Subscriptions
                                 </a>
                             </li>
                             <li>
-                                <a href="./payment.html" class="">
+                                <a id="pay-btn" onclick="showtab('pay')" href="javascript:void(0)" style="background-color:inherit">
                                     <i class="fa fa-credit-card"></i>
                                     All Payments
                                 </a>
                             </li>
                             <li>
-                                <a href="./setting.html" class="">
+                                <a id="setting-btn" onclick="showtab('setting')" href="javascript:void(0)" style="background-color:inherit">
                                     <i class="fa fa-cog"></i>
                                     All Settings
                                 </a>
                             </li>
-                           
+
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="app-main__outer">
-                <div class="app-main__inner">
+                <!-- Downloads -->
+                <div id="download" class="app-main__inner" style="display:block">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -263,14 +266,380 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-               
+                <!-- Downloads -->
+                <!-- Order -->
+                <div id="order" class="app-main__inner" style="display:none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-body border">
+                                        <h2 class="text-white">
+                                            All Orders
+                                        </h2>
+                                        <p class="intro-p">
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-header dark-bg">
+                                        <h3 class="text-white">
+                                            Your orders
+                                        </h3>
+                                        <p>
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                    <div class="card-body border">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th>Date Bought</th>
+                                                    <th>Order</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td><span class="status-table text-warning">Pending</span></td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            View order
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td><span class="status-table text-warning">Pending</span></td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            View order
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Order -->
+                <!-- Subscription -->
+                <div id="subs" class="app-main__inner" style="display:none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-body border">
+                                        <h2 class="text-white">
+                                            All Subscriptions
+                                        </h2>
+                                        <p class="intro-p">
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-header dark-bg">
+                                        <h3 class="text-white">
+                                            Your subscriptions
+                                        </h3>
+                                        <p>
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                    <div class="card-body border">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Expires</th>
+                                                    <th>Date Bought</th>
+                                                    <th>Manage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            Cancel Subscriptions
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            Cancel Subscriptions
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Subscription -->
+                <!-- Payment -->
+                <div id="pay" class="app-main__inner" style="display:none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-body border">
+                                        <h2 class="text-white">
+                                            All Payments
+                                        </h2>
+                                        <p class="intro-p">
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-header dark-bg">
+                                        <h3 class="text-white">
+                                            Your payments
+                                        </h3>
+                                        <p>
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                    <div class="card-body border">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Date </th>
+                                                    <th>Manage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            View receipt
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full bot</td>
+                                                    <td>7/2/2022, 2:10:22</td>
+                                                    <td>
+                                                        <a href="" class="table-link">
+                                                            View receipt
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Payment -->
+                <!-- setting -->
+
+                <div id="setting" class="app-main__inner" style="display:none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-body border">
+                                        <h2 class="text-white">
+                                            All Settings
+                                        </h2>
+                                        <p class="intro-p">
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dark-bg border">
+                                    <div class="card-header dark-bg">
+                                        <h3 class="text-white">
+                                            Your settings
+                                        </h3>
+                                        <p>
+                                            Featuring a simple and robust setup wizard
+                                        </p>
+                                    </div>
+                                    <div class="card-body border">
+                                        <form>
+                                            <div class="form-control-group row">
+                                                <div class="col-md-12">
+                                                    <label class="setting-label">Account Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-control-group row">
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control setting-input">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-control-group row">
+                                                <div class="col-md-12">
+                                                    <label class="setting-label">Account notifications</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-control-group row">
+                                                <div class="col-md-3">
+                                                    <label for="notification">
+                                                        <input type="checkbox" class=" setting-input">
+                                                        loremipsum loremipsumloremipsum loremipsumloremipsum
+                                                        loremipsumloremipsum loremipsum
+                                                        loremipsum loremipsumloremipsum lormipsumloremipsum
+                                                        loremipsumloremipsum loremipsum
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-control-group row">
+                                                <div class="col-md-12 text-lg-right">
+                                                    <button class="up_btn btn btn-primary">
+                                                        Update Settings
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            
+
         </div>
     </div>
     <script type="text/javascript" src="./assets/js/up_js/up_js.js"></script>
+    <script>
+        var download = document.getElementById('download')
+        var order = document.getElementById('order')
+        var subs = document.getElementById('subs')
+        var pay = document.getElementById('pay')
+        var setting = document.getElementById('setting')
+
+        download.style.display = 'block'
+        order.style.display = 'none'
+        subs.style.display = 'none'
+        pay.style.display = 'none'
+        setting.style.display = 'none'
+
+        function showtab(val) {
+            if (val == 'download') {
+                download.style.display = 'block'
+                order.style.display = 'none'
+                subs.style.display = 'none'
+                pay.style.display = 'none'
+                setting.style.display = 'none'
+                document.getElementById('download-btn').style.backgroundColor = 'rgba(255,255,255,.15)'
+                document.getElementById('order-btn').style.backgroundColor = 'inherit'
+                document.getElementById('subs-btn').style.backgroundColor = 'inherit'
+                document.getElementById('pay-btn').style.backgroundColor = 'inherit'
+                document.getElementById('setting-btn').style.backgroundColor = 'inherit'
+
+            }
+            if (val == 'order') {
+                download.style.display = 'none'
+                order.style.display = 'block'
+                subs.style.display = 'none'
+                pay.style.display = 'none'
+                setting.style.display = 'none'
+                document.getElementById('download-btn').style.backgroundColor = 'inherit'
+                document.getElementById('order-btn').style.backgroundColor = 'rgba(255,255,255,.15)'
+                document.getElementById('subs-btn').style.backgroundColor = 'inherit'
+                document.getElementById('pay-btn').style.backgroundColor = 'inherit'
+                document.getElementById('setting-btn').style.backgroundColor = 'inherit'
+
+            }
+            if (val == 'subs') {
+                download.style.display = 'none'
+                order.style.display = 'none'
+                subs.style.display = 'block'
+                pay.style.display = 'none'
+                setting.style.display = 'none'
+                document.getElementById('download-btn').style.backgroundColor = 'inherit'
+                document.getElementById('order-btn').style.backgroundColor = 'inherit'
+                document.getElementById('subs-btn').style.backgroundColor = 'rgba(255,255,255,.15)'
+                document.getElementById('pay-btn').style.backgroundColor = 'inherit'
+                document.getElementById('setting-btn').style.backgroundColor = 'inherit'
+
+            }
+            if (val == 'pay') {
+                download.style.display = 'none'
+                order.style.display = 'none'
+                subs.style.display = 'none'
+                pay.style.display = 'block'
+                setting.style.display = 'none'
+                document.getElementById('download-btn').style.backgroundColor = 'inherit'
+                document.getElementById('order-btn').style.backgroundColor = 'inherit'
+                document.getElementById('subs-btn').style.backgroundColor = 'inherit'
+                document.getElementById('pay-btn').style.backgroundColor = 'rgba(255,255,255,.15)'
+                document.getElementById('setting-btn').style.backgroundColor = 'inherit'
+            }
+            if (val == 'setting') {
+                download.style.display = 'none'
+                order.style.display = 'none'
+                subs.style.display = 'none'
+                pay.style.display = 'none'
+                setting.style.display = 'block'
+                document.getElementById('download-btn').style.backgroundColor = 'inherit'
+                document.getElementById('order-btn').style.backgroundColor = 'inherit'
+                document.getElementById('subs-btn').style.backgroundColor = 'inherit'
+                document.getElementById('pay-btn').style.backgroundColor = 'inherit'
+                document.getElementById('setting-btn').style.backgroundColor = 'rgba(255,255,255,.15)'
+
+            }
+        }
+    </script>
 </body>
 
 </html>
