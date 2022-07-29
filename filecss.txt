@@ -1,0 +1,12 @@
+.u-header__promo-text {
+    display: block;
+    color: #898a8c;
+    font-weight: bold;
+}
+.title-with-icon-link {
+    display: block;
+    padding: 18px 15px;
+    background: #585A63;
+    color: white;
+    border-radius: 12px;
+}
