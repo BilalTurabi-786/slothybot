@@ -10,3 +10,9 @@
     color: white;
     border-radius: 12px;
 }
+.navbar-expand-md .main-navbar-nav .main-sub-menu {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
+    box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
+    background: black;
+    background-color: #585A63;}
