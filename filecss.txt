@@ -1,12 +1,11 @@
-.faq-wrap .card .card-header.collapsed:after {
-    content: "+";
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    color: inherit;
-}
-
-.faq-wrap .card .card-header:after {
-    font-family: 'Font Awesome 6 Pro';
-    font-weight: 900;
-    content: "-";
+.faq-wrap .card .card-header {
+    padding: 1.95rem 1.25rem;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: 0px !important;
+    background: #2f313a;
+    margin-bottom: 0;
+    border: 1px solid #2f313a;
+    border-right: 0px;
+    border-left: 0px;
 }
