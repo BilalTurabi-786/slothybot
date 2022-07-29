@@ -1,17 +1,7 @@
-.pricing-price.justify-content-center.align-items-center.pb-2 {
-    margin-top: 19%;
+section#faq {
+    background: #16171a !important;
 }
-.badge-img {
-    position: absolute;
-    top: 0%;
-    z-index: 1;
-    right: 33%;
-    height: 100px;
-    width: 100px;
-}
-.badge-img-3 {
-    top: -2%;
-    right: 29%;
-    height: 124px;
-    width: 39%;
+.faq-wrap .card .card-header.collapsed {
+    background: #16171a;
+    color: white;
 }
