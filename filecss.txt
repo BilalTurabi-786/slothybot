@@ -1,7 +1,12 @@
-section#faq {
-    background: #16171a !important;
+.faq-wrap .card .card-header.collapsed:after {
+    content: "+";
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: inherit;
 }
-.faq-wrap .card .card-header.collapsed {
-    background: #16171a;
-    color: white;
+
+.faq-wrap .card .card-header:after {
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 900;
+    content: "-";
 }
