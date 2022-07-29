@@ -1,18 +1,9 @@
-.u-header__promo-text {
-    display: block;
+ul.list-unstyled.pricing-feature-list-2>li >p {
     color: #898a8c;
-    font-weight: bold;
+    font-size: 12px;
+    border: none;
 }
-.title-with-icon-link {
-    display: block;
-    padding: 18px 15px;
-    background: #585A63;
-    color: white;
-    border-radius: 12px;
+
+.popular-price.bg-dark.pricing-new-wrapper.mt-4.p-5.shadow-sm.border {
+    background: #16171a !important;
 }
-.navbar-expand-md .main-navbar-nav .main-sub-menu {
-    border-radius: 10px;
-    -webkit-box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
-    box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
-    background: black;
-    background-color: #585A63;}
