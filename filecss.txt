@@ -1,9 +1,17 @@
-ul.list-unstyled.pricing-feature-list-2>li >p {
-    color: #898a8c;
-    font-size: 12px;
-    border: none;
+.pricing-price.justify-content-center.align-items-center.pb-2 {
+    margin-top: 19%;
 }
-
-.popular-price.bg-dark.pricing-new-wrapper.mt-4.p-5.shadow-sm.border {
-    background: #16171a !important;
+.badge-img {
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    right: 33%;
+    height: 100px;
+    width: 100px;
+}
+.badge-img-3 {
+    top: -2%;
+    right: 29%;
+    height: 124px;
+    width: 39%;
 }
